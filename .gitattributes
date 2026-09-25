@@ -1,0 +1,33 @@
+.* export-ignore
+#
+* text=auto
+#
+*.bash    text eol=lf
+*.css     text
+*.css.map text
+*.csv     text
+*.html    text
+*.js      text
+*.js.map  text
+*.json    text
+*.md      text
+*.py      text
+*.sh      text eol=lf
+*.sql     text
+*.svg     text
+*.toml    text
+*.txt     text
+*.xml     text
+*.yaml    text
+*.yml     text
+#
+*.gif   binary
+*.gz    binary
+*.ico   binary
+*.jpg   binary
+*.pdf   binary
+*.png   binary
+*.ttf   binary
+*.woff  binary
+*.woff2 binary
+*.zip   binary
