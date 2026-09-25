@@ -8,7 +8,7 @@ site_url = "https://maroph.github.io/nosense_zensical/"
 site_description = "Blog with some of my stupid thoughts."
 site_author = "Manfred Rosenboom (maroph)"
 
-repo_url = "https://github.com/maroph/nosense_mkdocs_material/"
+repo_url = "https://github.com/maroph/nosense_zensical"
 repo_name = "maroph/nosense_zensical"
 edit_uri = "edit/main/docs"
 
