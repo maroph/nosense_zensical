@@ -22,10 +22,8 @@ Copyright &copy 2026 <a href="https://creativecommons.org/licenses/by/4.0/">CC-B
 """
 
 nav = [
-  { "Blog" = "index.md" }
-#   { "Blog" = [
-#     { "Blog" = "index.md" }
-#   ]}
+  { "Blog" = "index.md" },
+  { "About" = "about.md" }
 ]
 
 [project.validation]
