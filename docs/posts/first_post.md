@@ -1,5 +1,5 @@
 ---
-date: 2026-09-25T16:39:00
+date: 2026-11-06T11:43:00
 categories:
   - Announcement
 ---
@@ -9,5 +9,5 @@ This is the first post.
 <!-- more -->
 This is also my template repository for using
 the 
-[Material for MkDocs](https://squidfunk.github.io/mkdocs-material/)
+[Zensical](https://zensical.org/docs/get-started/)
 blog plugin.

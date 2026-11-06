@@ -1,5 +1,5 @@
-# 25-SEP-2026
-# Zensical >= 0.0.65
+# 06-NOV-2026
+# Zensical >= 0.1.0
 [project]
 dev_addr = "localhost:8000"
 
@@ -21,16 +21,22 @@ Copyright &copy 2026 <a href="https://creativecommons.org/licenses/by/4.0/">CC-B
 <a href="#__consent">Change cookie settings</a>
 """
 
+
 nav = [
   { "Blog" = "index.md" },
   { "About" = "about.md" }
 ]
 
+
 [project.validation]
 invalid_links = true
 invalid_link_anchors = true
-# unresolved_references: 0.0.56: deprecated, will be remove in a future release
 unresolved_references = false
+unresolved_footnotes = false
+unused_definitions = false
+unused_footnotes = false
+shadowed_definitions = false
+shadowed_footnotes = false
 
 
 [project.theme]
@@ -68,25 +74,26 @@ features = [
 
 
 palette = [
-  {
-    scheme = "default",
-    toggle = {
-      icon = "lucide/sun",
-      name = "Switch to dark mode"
+    {
+        scheme = "default",
+        media = "(prefers-color-scheme: light)",
+        toggle = {
+            icon = "lucide/sun",
+            name = "Switch to dark mode"
+          }
+    },
+    {
+        scheme = "slate",
+        media = "(prefers-color-scheme: dark)",
+        toggle = {
+            icon = "lucide/moon",
+            name = "Switch to light mode"
+          }
     }
-  },
-  {
-    scheme = "slate",
-    toggle = {
-      icon = "lucide/moon",
-      name = "Switch to light mode"
-    }
-  }
 ]
 
 
 [project.theme.icon]
-# logo = "lucide/smile"
 repo = "fontawesome/brands/github"
 edit = "material/pencil"
 view = "material/eye"
@@ -148,6 +155,21 @@ categories_allowed = [
     "General"
 ]
 
+[project.plugins.meta]
+enabled = true
+
+[project.plugins.minify]
+enabled = true
+minify_html = true
+minify_js = false
+minify_css = false
+htmlmin_opts = {
+    remove_comments = true
+}
+
+[project.plugins.privacy]
+enabled = true
+
 [project.plugins.rss]
 enabled = true
 match_path = "./posts/.*"
@@ -181,22 +203,26 @@ rss_feed_enabled = true
 stylesheet = "auto"
 use_git = true
 
+[project.plugins.search]
+enabled = true
+
 
 [project.extra]
 generator = true
 
 social = [
-  {
-    icon = "fontawesome/brands/github",
-    link = "https://github.com/maroph",
-    name = "github.com/maroph"
-  },
-  {
-    icon = "fontawesome/brands/mastodon",
-    link = "https://mastodon.social/@maroph",
-    name = "mastodon.social/@maroph"
-  }
+    {
+        icon = "fontawesome/brands/github",
+        link = "https://github.com/maroph",
+        name = "github.com/maroph"
+    },
+    {
+        icon = "fontawesome/brands/mastodon",
+        link = "https://mastodon.social/@maroph",
+        name = "mastodon.social/@maroph"
+    }
 ]
+
 
 [project.extra.consent]
 title = "Cookie consent"
