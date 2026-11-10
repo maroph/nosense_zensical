@@ -1,4 +1,4 @@
-# 06-NOV-2026
+# 10-NOV-2026
 # Zensical >= 0.1.0
 [project]
 dev_addr = "localhost:8000"
@@ -46,7 +46,7 @@ logo = "assets/128px-Feed-icon.svg.png"
 language = "en"
 direction = "ltr"
 features = [
-    "announce.dismiss",
+    # "announce.dismiss",
     # "content.action.edit",
     # "content.action.view",
     "content.code.annotate",
@@ -57,7 +57,7 @@ features = [
     "content.tooltips",
     "header.autohide",
     "navigation.expand",
-    "navigation.footer",
+    # "navigation.footer",
     "navigation.indexes",
     "navigation.instant",
     "navigation.instant.prefetch",
